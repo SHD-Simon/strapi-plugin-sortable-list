@@ -1,5 +1,5 @@
-import React, { forwardRef, useState } from "react";
-import { useIntl } from "react-intl";
+import React, { forwardRef, useState } from 'react';
+import { useIntl } from 'react-intl';
 import {
   closestCorners,
   DndContext,
@@ -8,19 +8,19 @@ import {
   PointerSensor,
   useSensor,
   useSensors,
-} from "@dnd-kit/core";
+} from '@dnd-kit/core';
 import {
   arrayMove,
   SortableContext,
   sortableKeyboardCoordinates,
-} from "@dnd-kit/sortable";
+} from '@dnd-kit/sortable';
 
-import { FieldAction, Flex, Icon, TextInput } from "@strapi/design-system";
-import { Plus } from "@strapi/icons";
+import { FieldAction, Flex, Icon, TextInput } from '@strapi/design-system';
+import { Plus } from '@strapi/icons';
 
-import { SortableItem } from "../SortableItem";
-import { Item } from "../Item";
-import getTrad from "../../utils/getTrad";
+import { SortableItem } from '../SortableItem';
+import { Item } from '../Item';
+import getTrad from '../../utils/getTrad';
 
 function createItem(label) {
   return {
@@ -39,12 +39,12 @@ const SortableList = forwardRef((props, forwardedRef) => {
     name,
     onChange,
     required = false,
-    value = "[]",
+    value = '[]',
     placeholder,
   } = props;
 
   const { formatMessage } = useIntl();
-  const [inputValue, setInputValue] = useState("");
+  const [inputValue, setInputValue] = useState('');
   const [activeId, setActiveId] = useState(null);
   const [errorString, setErrorString] = useState(error);
 
@@ -63,7 +63,7 @@ const SortableList = forwardRef((props, forwardedRef) => {
   );
 
   function handleKeyDown(event) {
-    if (event.key === "Enter") {
+    if (event.key === 'Enter') {
       handleAdd();
     }
   }
@@ -74,8 +74,8 @@ const SortableList = forwardRef((props, forwardedRef) => {
       if (!regex.test(inputValue)) {
         setErrorString(
           formatMessage({
-            id: getTrad("options.advanced.regex.error"),
-            defaultMessage: "Failed regex test",
+            id: getTrad('options.advanced.regex.error'),
+            defaultMessage: 'Failed regex test',
           })
         );
         return;
@@ -96,8 +96,8 @@ const SortableList = forwardRef((props, forwardedRef) => {
       return [...items, createItem(inputValue)];
     });
 
-    setInputValue("");
-    setErrorString("");
+    setInputValue('');
+    setErrorString('');
   }
 
   function handleDelete(itemToDelete) {
@@ -107,7 +107,7 @@ const SortableList = forwardRef((props, forwardedRef) => {
     onChange({
       target: {
         name,
-        value: JSON.stringify([...newValue]),
+        value: !newValue.length ? null : JSON.stringify([...newValue]),
         type: attribute.type,
       },
     });
@@ -157,8 +157,8 @@ const SortableList = forwardRef((props, forwardedRef) => {
           placeholder
             ? placeholder
             : formatMessage({
-                id: getTrad("input.placeholder"),
-                defaultMessage: "Failed regex test",
+                id: getTrad('input.placeholder'),
+                defaultMessage: 'Failed regex test',
               })
         }
         onKeyDown={handleKeyDown}

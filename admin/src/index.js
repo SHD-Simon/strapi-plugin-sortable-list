@@ -1,76 +1,76 @@
-import { prefixPluginTranslations } from "@strapi/helper-plugin";
-import pluginPkg from "../../package.json";
-import pluginId from "./pluginId";
-import PluginIcon from "./components/PluginIcon";
-import getTrad from "./utils/getTrad";
+import { prefixPluginTranslations } from '@strapi/helper-plugin';
+import pluginPkg from '../../package.json';
+import pluginId from './pluginId';
+import PluginIcon from './components/PluginIcon';
+import getTrad from './utils/getTrad';
 
 const name = pluginPkg.strapi.name;
 
 export default {
   register(app) {
     app.customFields.register({
-      name: "sortable-list",
+      name: 'sortable-list',
       pluginId,
-      type: "json",
+      type: 'json',
       intlLabel: {
-        id: getTrad("plugin.label"),
-        defaultMessage: "Sortable List",
+        id: getTrad('plugin.label'),
+        defaultMessage: 'Sortable List',
       },
       intlDescription: {
-        id: getTrad("plugin.description"),
-        defaultMessage: "Add multiple values to a sortable list",
+        id: getTrad('plugin.description'),
+        defaultMessage: 'Add multiple values to a sortable list',
       },
       icon: PluginIcon,
       components: {
         Input: async () =>
           import(
-            /* webpackChunkName: "input-component" */ "./components/SortableList"
+            /* webpackChunkName: "input-component" */ './components/SortableList'
           ),
       },
       options: {
         advanced: [
           {
             intlLabel: {
-              id: getTrad("options.advanced.regex"),
-              defaultMessage: "RegExp pattern",
+              id: getTrad('options.advanced.regex'),
+              defaultMessage: 'RegExp pattern',
             },
-            name: "options.inputRegex",
-            type: "text",
+            name: 'options.inputRegex',
+            type: 'text',
             description: {
-              id: getTrad("options.advanced.regex.description"),
-              defaultMessage: "The text of the regular expression",
+              id: getTrad('options.advanced.regex.description'),
+              defaultMessage: 'The text of the regular expression',
             },
           },
           {
             sectionTitle: {
-              id: "global.settings",
-              defaultMessage: "Settings",
+              id: 'global.settings',
+              defaultMessage: 'Settings',
             },
             items: [
               {
-                name: "required",
-                type: "checkbox",
+                name: 'required',
+                type: 'checkbox',
                 intlLabel: {
-                  id: getTrad("options.advanced.requiredField"),
-                  defaultMessage: "Required field",
+                  id: getTrad('options.advanced.requiredField'),
+                  defaultMessage: 'Required field',
                 },
                 description: {
-                  id: getTrad("options.advanced.requiredField.description"),
+                  id: getTrad('options.advanced.requiredField.description'),
                   defaultMessage:
                     "You won't be able to create an entry if this field is empty",
                 },
               },
               {
-                name: "private",
-                type: "checkbox",
+                name: 'private',
+                type: 'checkbox',
                 intlLabel: {
-                  id: getTrad("options.advanced.privateField"),
-                  defaultMessage: "Private field",
+                  id: getTrad('options.advanced.privateField'),
+                  defaultMessage: 'Private field',
                 },
                 description: {
-                  id: getTrad("options.advanced.privateField.description"),
+                  id: getTrad('options.advanced.privateField.description'),
                   defaultMessage:
-                    "This field will not show up in the API response",
+                    'This field will not show up in the API response',
                 },
               },
             ],

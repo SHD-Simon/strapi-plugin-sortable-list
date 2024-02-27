@@ -1,13 +1,14 @@
 {
   "strapi-plugin-sortable-list.description": "Add multiple values to a sortable list",
   "strapi-plugin-sortable-list.label": "Sortable List",
+  "strapi-plugin-sortable-list.input.placeholder": "Enter value and click plus to add to list",
   "strapi-plugin-sortable-list.options.advanced.regex": "RegExp pattern",
   "strapi-plugin-sortable-list.options.advanced.regex.description": "Provide a regular expression to validate the value",
   "strapi-plugin-sortable-list.options.advanced.regex.error": "Failed regex test",
   "strapi-plugin-sortable-list.options.advanced.requiredField": "Required field",
   "strapi-plugin-sortable-list.options.advanced.requiredField.description": "You won't be able to create an entry if this field is empty",
   "strapi-plugin-sortable-list.settings": "Settings",
-  "strapi-plugin-sortable-list.plugin.description.long": "AAdd multiple values to a sortable list. Returns as an array from the API.",
+  "strapi-plugin-sortable-list.plugin.description.long": "Add multiple values to a sortable list. Returns as an array from the API.",
   "strapi-plugin-sortable-list.plugin.description.short": "Add multiple values to a sortable list",
   "strapi-plugin-sortable-list.plugin.name": "Sortable List"
 }

@@ -4,12 +4,24 @@ A Strapi plugin for a sortable list custom field that returns an array of string
 
 ## Installation
 
-```bash
+To install this plugin, you need to add an NPM dependency to your Strapi application:
+
+```sh
 # If you use NPM
 npm install strapi-plugin-sortable-list
 
 # If you use Yarn
 yarn add strapi-plugin-sortable-list
+```
+
+Then, you'll need to build your admin panel:
+
+```sh
+# If you use NPM
+npm build
+
+# If you use Yarn
+yarn build
 ```
 
 ### Using the plugin

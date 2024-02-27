@@ -1,8 +1,8 @@
-import React from "react";
-import { useSortable } from "@dnd-kit/sortable";
-import { CSS } from "@dnd-kit/utilities";
+import React from 'react';
+import { useSortable } from '@dnd-kit/sortable';
+import { CSS } from '@dnd-kit/utilities';
 
-import { Item } from "../Item";
+import { Item } from '../Item';
 
 export function SortableItem(props) {
   const {

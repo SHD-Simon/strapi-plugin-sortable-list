@@ -1,6 +1,6 @@
-import { forwardRef } from "react";
-import { Box, Flex, IconButton, Typography } from "@strapi/design-system";
-import { Cross, Drag } from "@strapi/icons";
+import { forwardRef } from 'react';
+import { Box, Flex, IconButton, Typography } from '@strapi/design-system';
+import { Cross, Drag } from '@strapi/icons';
 
 export const Item = forwardRef(
   (
@@ -11,8 +11,8 @@ export const Item = forwardRef(
       <Box
         style={style}
         ref={ref}
-        background={disabled ? "neutral150" : undefined}
-        borderColor={"neutral200"}
+        background={disabled ? 'neutral150' : undefined}
+        borderColor={'neutral200'}
         hasRadius={true}
       >
         <Flex gap={1}>
@@ -23,7 +23,7 @@ export const Item = forwardRef(
             {...attributes}
             {...listeners}
           />
-          <Typography textColor={disabled ? "neutral600" : undefined}>
+          <Typography textColor={disabled ? 'neutral600' : undefined}>
             {label}
           </Typography>
           <IconButton
