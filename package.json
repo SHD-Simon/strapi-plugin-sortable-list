@@ -1,6 +1,6 @@
 {
   "name": "strapi-plugin-sortable-list",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "A plugin for Strapi - sortable list custom field that returns an array",
   "keywords": [
     "Strapi",

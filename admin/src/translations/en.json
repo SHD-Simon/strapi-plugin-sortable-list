@@ -7,6 +7,7 @@
   "strapi-plugin-sortable-list.options.advanced.regex.error": "Failed regex test",
   "strapi-plugin-sortable-list.options.advanced.requiredField": "Required field",
   "strapi-plugin-sortable-list.options.advanced.requiredField.description": "You won't be able to create an entry if this field is empty",
+  "strapi-plugin-sortable-list.options.advanced.requiredField.error": "This value is required",
   "strapi-plugin-sortable-list.settings": "Settings",
   "strapi-plugin-sortable-list.plugin.description.long": "Add multiple values to a sortable list. Returns as an array from the API.",
   "strapi-plugin-sortable-list.plugin.description.short": "Add multiple values to a sortable list",

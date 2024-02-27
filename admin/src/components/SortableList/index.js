@@ -158,7 +158,7 @@ const SortableList = forwardRef((props, forwardedRef) => {
             ? placeholder
             : formatMessage({
                 id: getTrad('input.placeholder'),
-                defaultMessage: 'Failed regex test',
+                defaultMessage: 'Enter value and click plus to add to list',
               })
         }
         onKeyDown={handleKeyDown}
@@ -166,7 +166,7 @@ const SortableList = forwardRef((props, forwardedRef) => {
         value={inputValue}
         required={required}
         disabled={disabled}
-        error={errorString}
+        error={error || errorString}
         endAction={
           <FieldAction onClick={handleAdd}>
             <Icon width={3} height={3} color="neutral400" as={Plus} />
