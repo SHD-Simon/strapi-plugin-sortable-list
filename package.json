@@ -1,0 +1,50 @@
+{
+  "name": "strapi-plugin-sortable-list",
+  "version": "0.2.0",
+  "description": "A plugin for Strapi - sortable list custom field that returns an array",
+  "keywords": [
+    "Strapi",
+    "plugin",
+    "sortable",
+    "list",
+    "custom",
+    "field"
+  ],
+  "author": "Simon Howe",
+  "license": "MIT",
+  "maintainers": [
+    {
+      "name": "Simon Howe"
+    }
+  ],
+  "dependencies": {
+    "@dnd-kit/core": "^6.1.0",
+    "@dnd-kit/sortable": "^8.0.0",
+    "@strapi/design-system": "^1.6.3",
+    "@strapi/helper-plugin": "^4.6.0",
+    "@strapi/icons": "^1.6.3",
+    "prop-types": "^15.7.2"
+  },
+  "devDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^5.3.4",
+    "styled-components": "^5.3.6"
+  },
+  "peerDependencies": {
+    "react": "^17.0.0 || ^18.0.0",
+    "react-dom": "^17.0.0 || ^18.0.0",
+    "react-router-dom": "^5.2.0",
+    "styled-components": "^5.2.1"
+  },
+  "engines": {
+    "node": ">=18.0.0 <=20.x.x",
+    "npm": ">=6.0.0"
+  },
+  "strapi": {
+    "name": "strapi-plugin-sortable-list",
+    "description": "Add multiple values to a sortable list",
+    "kind": "plugin",
+    "displayName": "Sortable List"
+  }
+}
