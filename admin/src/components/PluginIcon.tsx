@@ -1,5 +1,5 @@
-import { List } from '@strapi/icons';
+import logo from '../assets/sortable-list-logo.svg';
 
-const PluginIcon = () => <List />;
+const PluginIcon = () => <img src={logo} alt="Sortable List logo" />;
 
 export { PluginIcon };

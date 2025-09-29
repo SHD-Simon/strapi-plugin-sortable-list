@@ -107,6 +107,12 @@ const SortableInput = forwardRef<HTMLDivElement, SortableInputProps>(
         setErrorString('Item cannot be empty');
         return;
       }
+
+      if (regex && !regex.test(inputValue)) {
+        setErrorString('Failed regex test');
+        return;
+      }
+
       setErrorString('');
 
       const currentItems = items.map((item) => item.label);
@@ -170,6 +176,7 @@ const SortableInput = forwardRef<HTMLDivElement, SortableInputProps>(
             disabled={disabled}
             onKeyDown={handleKeyDown}
             endAction={<Plus width={16} height={16} color="neutral400" onClick={handleAdd} />}
+            placeholder="Press enter to add"
           />
           <Field.Hint />
           <Field.Error />

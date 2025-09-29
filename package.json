@@ -1,12 +1,12 @@
 {
-  "version": "0.3.1",
+  "version": "0.3.2",
   "keywords": [
-    "Strapi",
-    "plugin",
+    "strapi",
+    "strapi-plugin",
+    "strapi-v5",
+    "strapi-custom-field",
     "sortable",
-    "list",
-    "custom",
-    "field"
+    "list"
   ],
   "type": "commonjs",
   "exports": {
@@ -69,10 +69,10 @@
     "kind": "plugin",
     "name": "strapi-plugin-sortable-list",
     "displayName": "Sortable List",
-    "description": "A plugin for Strapi - sortable list custom field that returns an array"
+    "description": "A custom field to add multiple values to a sortable list. Returns as an array from the API."
   },
   "name": "strapi-plugin-sortable-list",
-  "description": "A plugin for Strapi - sortable list custom field that returns an array",
+  "description": "A plugin for Strapi - A custom field to add multiple values to a sortable list. Returns as an array from the API.",
   "license": "MIT",
   "repository": {
     "type": "git",
