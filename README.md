@@ -4,7 +4,7 @@ A Strapi plugin for a sortable list custom field that returns an array of string
 
 ## Installation
 
-To install this plugin, you need to add an NPM dependency to your Strapi application:
+Install in the Strapi application:
 
 ```sh
 # If you use NPM
@@ -14,7 +14,7 @@ npm install strapi-plugin-sortable-list
 yarn add strapi-plugin-sortable-list
 ```
 
-Then, you'll need to build your admin panel:
+Rebuild the admin panel:
 
 ```sh
 # If you use NPM
@@ -24,7 +24,10 @@ npm build
 yarn build
 ```
 
-### Using the plugin
+Verfiy installation
 
-Once the plugin is installed the **Sortable List** custom field is ready to use.
-Add a new field, go to custom and select **Sortable List**.
+Navigate to Settings > Plugins and check that **Sortable List** is installed.
+
+## Using the plugin
+
+When selecting a field type navigate to custom and select 'Sortable List'.

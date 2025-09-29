@@ -1,6 +1,6 @@
-'use strict';
+import type { Core } from '@strapi/strapi';
 
-module.exports = ({ strapi }) => {
+const register = ({ strapi }: { strapi: Core.Strapi }) => {
   strapi.customFields.register({
     name: 'sortable-list',
     plugin: 'strapi-plugin-sortable-list',
@@ -11,3 +11,5 @@ module.exports = ({ strapi }) => {
     },
   });
 };
+
+export default register;

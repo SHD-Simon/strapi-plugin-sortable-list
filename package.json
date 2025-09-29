@@ -1,51 +1,86 @@
 {
-  "name": "strapi-plugin-sortable-list",
-  "version": "0.2.2",
-  "description": "A plugin for Strapi - sortable list custom field that returns an array",
+  "version": "0.3.2",
   "keywords": [
-    "Strapi",
-    "plugin",
+    "strapi",
+    "strapi-plugin",
+    "strapi-v5",
+    "strapi-custom-field",
     "sortable",
-    "list",
-    "custom",
-    "field"
+    "list"
   ],
-  "author": "Simon Howe",
-  "license": "MIT",
-  "maintainers": [
-    {
-      "name": "Simon Howe"
+  "type": "commonjs",
+  "exports": {
+    "./package.json": "./package.json",
+    "./strapi-admin": {
+      "types": "./dist/admin/src/index.d.ts",
+      "source": "./admin/src/index.ts",
+      "import": "./dist/admin/index.mjs",
+      "require": "./dist/admin/index.js",
+      "default": "./dist/admin/index.js"
+    },
+    "./strapi-server": {
+      "types": "./dist/server/src/index.d.ts",
+      "source": "./server/src/index.ts",
+      "import": "./dist/server/index.mjs",
+      "require": "./dist/server/index.js",
+      "default": "./dist/server/index.js"
     }
+  },
+  "files": [
+    "dist"
   ],
+  "scripts": {
+    "build": "strapi-plugin build",
+    "watch": "strapi-plugin watch",
+    "watch:link": "strapi-plugin watch:link",
+    "verify": "strapi-plugin verify",
+    "test:ts:front": "run -T tsc -p admin/tsconfig.json",
+    "test:ts:back": "run -T tsc -p server/tsconfig.json"
+  },
   "dependencies": {
-    "@dnd-kit/core": "^6.1.0",
-    "@dnd-kit/sortable": "^8.0.0",
-    "@strapi/design-system": "^1.6.3",
-    "@strapi/helper-plugin": "^4.6.0",
-    "@strapi/icons": "^1.6.3",
-    "prop-types": "^15.7.2"
+    "@dnd-kit/core": "^6.3.1",
+    "@dnd-kit/sortable": "^10.0.0",
+    "@strapi/design-system": "^2.0.0-rc.30",
+    "@strapi/icons": "^2.0.0-rc.30",
+    "react-intl": "^7.1.11"
   },
   "devDependencies": {
-    "@strapi/strapi": "^4.6.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-router-dom": "^5.3.4",
-    "styled-components": "^5.3.6"
+    "@strapi/sdk-plugin": "^5.3.2",
+    "@strapi/strapi": "^5.24.1",
+    "@strapi/typescript-utils": "^5.24.1",
+    "@types/react": "^19.1.13",
+    "@types/react-dom": "^19.1.9",
+    "prettier": "^3.6.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.30.1",
+    "styled-components": "^6.1.19",
+    "typescript": "^5.9.2"
   },
   "peerDependencies": {
-    "react": "^17.0.0 || ^18.0.0",
-    "react-dom": "^17.0.0 || ^18.0.0",
-    "react-router-dom": "^5.2.0",
-    "styled-components": "^5.2.1"
-  },
-  "engines": {
-    "node": ">=18.0.0 <=20.x.x",
-    "npm": ">=6.0.0"
+    "@strapi/sdk-plugin": "^5.3.2",
+    "@strapi/strapi": "^5.24.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.30.1",
+    "styled-components": "^6.1.19"
   },
   "strapi": {
-    "name": "strapi-plugin-sortable-list",
-    "description": "Add multiple values to a sortable list",
     "kind": "plugin",
-    "displayName": "Sortable List"
-  }
+    "name": "strapi-plugin-sortable-list",
+    "displayName": "Sortable List",
+    "description": "A custom field to add multiple values to a sortable list. Returns as an array from the API."
+  },
+  "name": "strapi-plugin-sortable-list",
+  "description": "A plugin for Strapi - A custom field to add multiple values to a sortable list. Returns as an array from the API.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/SHD-Simon/strapi-plugin-sortable-list.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SHD-Simon/strapi-plugin-sortable-list/issues"
+  },
+  "homepage": "https://github.com/SHD-Simon/strapi-plugin-sortable-list#readme",
+  "author": "Simon Howe <simon@simonhowe.dev>"
 }

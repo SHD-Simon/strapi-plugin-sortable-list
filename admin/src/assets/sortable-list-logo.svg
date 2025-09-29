@@ -1,0 +1,11 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+	<path fill-rule="evenodd" opacity=".5" fill="#ffffff" stroke="#e1e1e8" stroke-miterlimit="100" d="m3 3h24c1.1 0 2 0.9 2 2v24c0 1.1-0.9 2-2 2h-24c-1.1 0-2-0.9-2-2v-24c0-1.1 0.9-2 2-2z"/>
+	<path fill-rule="evenodd" fill="#ffffff" stroke="#e1e1e8" stroke-miterlimit="100" d="m5 1h24c1.1 0 2 0.9 2 2v24c0 1.1-0.9 2-2 2h-24c-1.1 0-2-0.9-2-2v-24c0-1.1 0.9-2 2-2z"/>
+	<path fill-rule="evenodd" fill="#f5f5f8" d="m8.75 5h16c1.1 0 2 0.9 2 2v16c0 1.1-0.9 2-2 2h-16c-1.1 0-2-0.9-2-2v-16c0-1.1 0.9-2 2-2z"/>
+	<path fill-rule="evenodd" fill="#bcbccc" d="m15 16c-0.55 0-1-0.45-1-1 0-0.55 0.45-1 1-1 0.55 0 1 0.45 1 1 0 0.55-0.45 1-1 1z"/>
+	<path fill-rule="evenodd" fill="#bcbccc" d="m15 19c-0.55 0-1-0.45-1-1 0-0.55 0.45-1 1-1 0.55 0 1 0.45 1 1 0 0.55-0.45 1-1 1z"/>
+	<path fill-rule="evenodd" fill="#bcbccc" d="m15 13c-0.55 0-1-0.45-1-1 0-0.55 0.45-1 1-1 0.55 0 1 0.45 1 1 0 0.55-0.45 1-1 1z"/>
+	<path fill-rule="evenodd" fill="#bcbccc" d="m19 16c-0.55 0-1-0.45-1-1 0-0.55 0.45-1 1-1 0.55 0 1 0.45 1 1 0 0.55-0.45 1-1 1z"/>
+	<path fill-rule="evenodd" fill="#bcbccc" d="m19 19c-0.55 0-1-0.45-1-1 0-0.55 0.45-1 1-1 0.55 0 1 0.45 1 1 0 0.55-0.45 1-1 1z"/>
+	<path fill-rule="evenodd" fill="#bcbccc" d="m19 13c-0.55 0-1-0.45-1-1 0-0.55 0.45-1 1-1 0.55 0 1 0.45 1 1 0 0.55-0.45 1-1 1z"/>
+</svg>
