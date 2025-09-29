@@ -1,18 +1,13 @@
-import React from 'react';
+import { CSSProperties } from 'react';
 import { useSortable } from '@dnd-kit/sortable';
 import { CSS } from '@dnd-kit/utilities';
-
 import { Item } from '../Item';
+import { ItemProps } from 'src/types';
 
-export function SortableItem(props) {
-  const {
-    attributes,
-    listeners,
-    setNodeRef,
-    transform,
-    transition,
-    isDragging,
-  } = useSortable({ id: props.id });
+export function SortableItem(props: ItemProps) {
+  const { attributes, listeners, setNodeRef, transform, transition, isDragging } = useSortable({
+    id: props.id,
+  });
 
   const style = {
     transform: CSS.Translate.toString(transform),
@@ -28,6 +23,8 @@ export function SortableItem(props) {
       label={props.label}
       attributes={attributes}
       listeners={listeners}
+      regex={props.regex}
+      handleItemLabelChange={props.handleItemLabelChange}
       handleDelete={props.handleDelete}
     />
   );
